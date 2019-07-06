@@ -1,5 +1,7 @@
-/Users/b0206672/Desktop/TestVagrant/src/main/java/Tests/FlightBookingTest.java
-/Users/b0206672/Desktop/TestVagrant/src/main/java/Tests/HotelBookingTest.java
-/Users/b0206672/Desktop/TestVagrant/src/main/java/Tests/SignInTest.java
+/Users/b0206672/Desktop/TestVagrant/src/main/java/tests/SignInTest.java
+/Users/b0206672/Desktop/TestVagrant/src/main/java/pages/Flights.java
+/Users/b0206672/Desktop/TestVagrant/src/main/java/tests/FlightBookingTest.java
+/Users/b0206672/Desktop/TestVagrant/src/main/java/pages/Hotels.java
 /Users/b0206672/Desktop/TestVagrant/src/main/java/base/BrowserFactory.java
 /Users/b0206672/Desktop/TestVagrant/src/main/java/util/Wait.java
+/Users/b0206672/Desktop/TestVagrant/src/main/java/tests/HotelBookingTest.java

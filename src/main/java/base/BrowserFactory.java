@@ -13,16 +13,17 @@ public class BrowserFactory {
 	{	
 	}
 
-	public static WebDriver initialize()
+	public static void initialize()
 	{
 		setDriverPath();
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--disable-notifications");
 		instance = new ChromeDriver(options);
+		instance.manage().window().maximize();
 		System.out.println("Driver launched : CHROME");
-		return instance;
 	}
 
+	@SuppressWarnings("restriction")
 	private static void setDriverPath() {
 		final String driver_path ="webdriver.chrome.driver";
 		if (PlatformUtil.isMac()) {

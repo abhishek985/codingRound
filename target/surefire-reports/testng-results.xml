@@ -2,28 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="65761" started-at="2019-07-06T08:02:32Z" finished-at="2019-07-06T08:03:37Z">
+  <suite name="Suite" duration-ms="127052" started-at="2019-07-06T17:58:08Z" finished-at="2019-07-06T18:00:15Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="65761" started-at="2019-07-06T08:02:32Z" finished-at="2019-07-06T08:03:37Z">
-      <class name="Tests.SignInTest">
-        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:Tests.SignInTest@b684286]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="14275" started-at="2019-07-06T13:33:23Z" finished-at="2019-07-06T13:33:37Z">
+    <test name="SignInTest" duration-ms="16576" started-at="2019-07-06T17:58:08Z" finished-at="2019-07-06T17:58:25Z">
+      <class name="tests.SignInTest">
+        <test-method status="PASS" signature="shouldThrowAnErrorIfSignInDetailsAreMissing()[pri:0, instance:tests.SignInTest@1cd072a9]" name="shouldThrowAnErrorIfSignInDetailsAreMissing" duration-ms="16557" started-at="2019-07-06T23:28:08Z" finished-at="2019-07-06T23:28:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldThrowAnErrorIfSignInDetailsAreMissing -->
-      </class> <!-- Tests.SignInTest -->
-      <class name="Tests.FlightBookingTest">
-        <test-method status="PASS" signature="testThatResultsAppearForAOneWayJourney()[pri:0, instance:Tests.FlightBookingTest@34ce8af7]" name="testThatResultsAppearForAOneWayJourney" duration-ms="25889" started-at="2019-07-06T13:32:57Z" finished-at="2019-07-06T13:33:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testThatResultsAppearForAOneWayJourney -->
-      </class> <!-- Tests.FlightBookingTest -->
-      <class name="Tests.HotelBookingTest">
-        <test-method status="PASS" signature="shouldBeAbleToSearchForHotels()[pri:0, instance:Tests.HotelBookingTest@1e643faf]" name="shouldBeAbleToSearchForHotels" duration-ms="25549" started-at="2019-07-06T13:32:32Z" finished-at="2019-07-06T13:32:57Z">
+      </class> <!-- tests.SignInTest -->
+    </test> <!-- SignInTest -->
+    <test name="HotelBookingTest" duration-ms="39005" started-at="2019-07-06T17:58:30Z" finished-at="2019-07-06T17:59:09Z">
+      <class name="tests.HotelBookingTest">
+        <test-method status="PASS" signature="shouldBeAbleToSearchForHotels()[pri:0, instance:tests.HotelBookingTest@17c68925]" name="shouldBeAbleToSearchForHotels" duration-ms="39005" started-at="2019-07-06T23:28:30Z" finished-at="2019-07-06T23:29:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldBeAbleToSearchForHotels -->
-      </class> <!-- Tests.HotelBookingTest -->
-    </test> <!-- Test -->
+      </class> <!-- tests.HotelBookingTest -->
+    </test> <!-- HotelBookingTest -->
+    <test name="FlightBookingTest" duration-ms="61441" started-at="2019-07-06T17:59:14Z" finished-at="2019-07-06T18:00:15Z">
+      <class name="tests.FlightBookingTest">
+        <test-method status="PASS" signature="shouldBeAbleToSearchForHotels()[pri:0, instance:tests.FlightBookingTest@17f6480]" name="shouldBeAbleToSearchForHotels" duration-ms="61440" started-at="2019-07-06T23:29:14Z" finished-at="2019-07-06T23:30:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldBeAbleToSearchForHotels -->
+      </class> <!-- tests.FlightBookingTest -->
+    </test> <!-- FlightBookingTest -->
   </suite> <!-- Suite -->
 </testng-results>

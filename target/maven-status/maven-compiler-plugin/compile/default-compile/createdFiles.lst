@@ -1,5 +1,7 @@
-Tests/FlightBookingTest.class
-Tests/SignInTest.class
+tests/HotelBookingTest.class
+tests/SignInTest.class
 util/Wait.class
-Tests/HotelBookingTest.class
+tests/FlightBookingTest.class
+pages/Flights.class
+pages/Hotels.class
 base/BrowserFactory.class

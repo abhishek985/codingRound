@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="Tests.HotelBookingTest"/>
-      <class name="Tests.FlightBookingTest"/>
-      <class name="Tests.SignInTest"/>
-    </classes>
-  </test> <!-- Test -->
+	<test name="SignInTest">
+		<classes>
+			<class name="tests.SignInTest" />
+		</classes>
+	</test>
+	<test name="HotelBookingTest">
+		<classes>
+			<class name="tests.HotelBookingTest" />
+		</classes>
+	</test>
+	<test name="FlightBookingTest">
+	<classes>
+		<class name="tests.FlightBookingTest" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="HotelBookingTest(failed)">
+    <classes>
+      <class name="tests.HotelBookingTest">
+        <methods>
+          <include name="shouldBeAbleToSearchForHotels"/>
+        </methods>
+      </class> <!-- tests.HotelBookingTest -->
+    </classes>
+  </test> <!-- HotelBookingTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
