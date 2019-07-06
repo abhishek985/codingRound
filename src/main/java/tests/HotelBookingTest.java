@@ -6,12 +6,6 @@ import pages.Hotels;
 
 public class HotelBookingTest {
 
-//	@BeforeTest
-//	public void setUp() {	
-//		BrowserFactory.initialize();
-//		BrowserFactory.instance.get("https://www.cleartrip.com/");
-//	}
-
 	@Test
 	public void shouldBeAbleToSearchForHotels() {
 		BrowserFactory.initialize();
