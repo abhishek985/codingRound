@@ -1,3 +1,4 @@
+package Tests;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -12,14 +13,15 @@ import org.testng.annotations.Test;
 
 import com.sun.javafx.PlatformUtil;
 
+import base.BrowserFactory;
+
 public class FlightBookingTest {
-
-	WebDriver driver = new ChromeDriver();
-
+	
+	WebDriver driver;
 	@Test
 	public void testThatResultsAppearForAOneWayJourney() {
 
-		setDriverPath();
+		driver = BrowserFactory.initialize();
 		driver.get("https://www.cleartrip.com/");
 		waitFor(2000);
 		driver.findElement(By.id("OneWay")).click();
@@ -28,11 +30,11 @@ public class FlightBookingTest {
 
 		//wait for the auto complete options to appear for the origin
 
-		
-		
+
+
 		WebDriverWait ww = new WebDriverWait(driver,4);
 		ww.until(ExpectedConditions.visibilityOfElementLocated(By.id("ui-id-1")));
-		
+
 		List<WebElement> originOptions = driver.findElement(By.id("ui-id-1")).findElements(By.tagName("li"));
 		originOptions.get(0).click();
 
@@ -44,7 +46,7 @@ public class FlightBookingTest {
 
 		//wait for the auto complete options to appear for the destination
 
-		
+
 		ww.until(ExpectedConditions.visibilityOfElementLocated(By.id("ui-id-2")));
 		//select the first item from the destination auto complete list
 		List<WebElement> destinationOptions = driver.findElement(By.id("ui-id-2")).findElements(By.tagName("li"));

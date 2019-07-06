@@ -1,3 +1,4 @@
+package Tests;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,9 +9,9 @@ import org.testng.annotations.Test;
 
 import com.sun.javafx.PlatformUtil;
 
-public class HotelBookingTest {
+import base.BrowserFactory;
 
-	
+public class HotelBookingTest {
 
 	@FindBy(linkText = "Hotels")
 	private WebElement hotelLink;
@@ -26,9 +27,9 @@ public class HotelBookingTest {
 
 	@Test
 	public void shouldBeAbleToSearchForHotels() {
-		WebDriver driver = new ChromeDriver();
-		setDriverPath();
-		
+		WebDriver driver;
+		driver = BrowserFactory.initialize();
+
 		driver.get("https://www.cleartrip.com/");
 		HotelBookingTest login=PageFactory.initElements(driver, HotelBookingTest.class);
 
@@ -52,16 +53,4 @@ public class HotelBookingTest {
 			e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
 		}
 	}
-	private void setDriverPath() {
-		if (PlatformUtil.isMac()) {
-			System.setProperty("webdriver.chrome.driver", "chromedriver");
-		}
-		if (PlatformUtil.isWindows()) {
-			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		}
-		if (PlatformUtil.isLinux()) {
-			System.setProperty("webdriver.chrome.driver", "chromedriver_linux");
-		}
-	}
-
 }
